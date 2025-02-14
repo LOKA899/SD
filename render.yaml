@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: souldraw-lottery-bot
+    env: node
+    plan: free
+    region: oregon # You can change to the nearest region
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
