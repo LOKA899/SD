@@ -1,0 +1,18 @@
+{
+  "name": "souldraw-lottery-bot",
+  "version": "1.0.0",
+  "description": "A lottery bot for Discord",
+  "main": "index.js",
+  "scripts": {
+    "start": "node deploy-commands.js && node index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.0.3",
+    "moment": "^2.29.4",
+    "sqlite3": "^5.1.6"
+  }
+}
