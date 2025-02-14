@@ -390,7 +390,7 @@ client.on('interactionCreate', async (interaction) => {
         }
     }
 
-          } else if (interaction.isStringSelectMenu()) {
+          } else if (interaction.isStringSelectMenuComponent()) {
         if (interaction.customId === 'remove_participant') {
             const souldrawToRemove = ongoingSouldraws.find(l => l.id === interaction.message.embeds[0].description.match(/Souldraw ID: (\w+)/)[1]);
 
